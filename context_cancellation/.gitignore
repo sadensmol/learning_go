@@ -1,0 +1,6 @@
+test_echo.db
+test_worker.db
+test_echo_*.db
+test_worker_*.db
+worker_server_bin
+echo_server_bin

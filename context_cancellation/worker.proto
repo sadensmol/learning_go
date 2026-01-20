@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package worker;
+
+option go_package = "./;main";
+
+service WorkerService {
+  rpc DoWork (WorkRequest) returns (WorkResponse);
+}
+
+message WorkRequest {
+  string task_id = 1;
+  string data = 2;
+}
+
+message WorkResponse {
+  bool success = 1;
+  string message = 2;
+}
